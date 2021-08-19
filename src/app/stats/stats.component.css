@@ -1,0 +1,112 @@
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/************************************************/
+
+#statsPanel {
+    width: 75vw;
+    max-width: 1000px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fade ease 1.5s;
+}
+
+#wrap1, #wrap2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wrap1 {
+    margin-bottom: 1em;
+}
+
+.statWrap {
+    padding: 4px;
+    background: linear-gradient(to bottom right, var(--dark-orange-gradient), 30%, var(--light-orange-gradient));
+    border-radius: 20px;
+    margin: 0 4px;
+}
+
+.statText {
+    border-radius: 17px;
+    padding: 1em;
+    background-color: rgb(216, 216, 216);
+    user-select: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    animation: fade ease 1.5s;
+}
+
+.p1 {
+    font-size: 2em;
+    font-family: "Stentiga", sans-serif;
+    color: var(--dark-orange-gradient);
+}
+.p2 {
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+#stopwatch {
+    user-select: none;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#resetButton {
+    margin-left: 1em;
+    border: none;
+    background-color: var(--dark-orange-gradient);
+    padding: 1.1em;
+    color: var(--white);
+    font-family: "Stentiga", sans-serif;
+    border-radius: 7px;
+    transition: ease 0.3s;
+}
+#resetButton:hover {
+    background-color: rgba(221, 59, 9, 0.849);
+    transform: scale(96%);
+}
+
+/************************************************/
+
+@media only screen and (min-width: 675px) {
+    #statsPanel {
+        flex-direction: row;
+    }
+
+    #wrap1 {
+        margin-bottom: 0;
+        margin-right: 1em;
+    }
+
+    #resetButton {
+        margin-left: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    .p1 {
+        font-size: 3em;
+    }
+    .p2 {
+        font-size: 1.2em;
+    }
+
+    #stopwatch {
+        font-size: 2em;
+    }
+
+    #resetButton {
+        font-size: 1em;
+    }
+}

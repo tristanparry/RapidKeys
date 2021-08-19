@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Stentiga";
+    src: url('Stentiga-Regular.woff2') format('woff2'),
+        url('Stentiga-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

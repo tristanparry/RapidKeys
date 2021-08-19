@@ -1,0 +1,51 @@
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/************************************************/
+
+#phraseContainer {
+    background: linear-gradient(to bottom right, var(--light-orange-gradient), 70%, var(--dark-orange-gradient));
+    width: 75vw;
+    max-width: 1000px;
+    padding: 2em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    text-align: center;
+    animation: fadeSlideDown ease 1s;
+}
+
+#phraseContainer span {
+    font-size: 0.9em;
+    user-select: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    line-height: 1.1em;
+}
+
+/************************************************/
+
+@media only screen and (min-width: 400px) {
+    #phraseContainer span {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #phraseContainer {
+        margin-top: 2em;
+    }
+
+    #phraseContainer span {
+        font-size: 1.1em;
+    }
+}

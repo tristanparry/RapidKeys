@@ -1,0 +1,31 @@
+<div id="statsPanel">
+    <div id="wrap1">
+        <div class="statWrap">
+            <div class="statText">
+                <p class="p1">{{ currentWPM }}</p>
+                <p class="p2">WPM</p>
+            </div>
+        </div>
+
+        <div class="statWrap">
+            <div class="statText">
+                <p class="p1">{{ currentErrorCount }}</p>
+                <p class="p2">ERRORS</p>
+            </div>
+        </div>
+
+        <div class="statWrap">
+            <div class="statText">
+                <p class="p1">{{ currentAccuracy }}%</p>
+                <p class="p2">ACCURACY</p>
+            </div>
+        </div>
+    </div>
+    <div id="wrap2">
+        <span id="stopwatch">{{ displayMinutes }}:{{ displaySeconds }}.{{ displayDeciseconds }}</span>
+
+        <button id="resetButton" (click)="resetGame()">RESET</button>
+    </div>
+</div>
+
+<script></script>

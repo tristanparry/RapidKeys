@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "rapidkeys-8b0df": {
+      "hosting": {
+        "rapidkeys-app": [
+          "rapidkeys-8b0df"
+        ]
+      }
+    }
+  }
+}

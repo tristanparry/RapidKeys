@@ -1,0 +1,6 @@
+<div id="typeBox">
+    <!-- CALLS START AND UPDATE FUNCTIONS ON TEXTAREA INPUT
+         ON INPUT EVENT, RUN THE FUNCTIONS startTimer() AND trackTyping()
+         THE TEXTAREA VALUE IS SENT TO THE typedText PROP -->
+    <textarea placeholder="Type here..." (input)="startTimer();trackTyping()" [(ngModel)]="typedText"></textarea>
+</div>
